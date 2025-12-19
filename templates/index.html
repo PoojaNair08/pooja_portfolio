@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pooja Nair | Portfolio</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ================= HERO SECTION ================= -->
+    <div class="header profile-header">
+
+        <!-- NAVBAR INSIDE HERO -->
+        <nav class="navbar hero-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <img src="{{ url_for('static', filename='profile.png') }}"
+             alt="Profile Picture"
+             class="profile-pic pop-up">
+
+        <div class="header-text">
+            <h1>Pooja Nair</h1>
+            <p class="typing-subtext">MCA Student | Aspiring Web Developer</p>
+        </div>
+
+    </div>
+
+    <!-- ================= ABOUT ================= -->
+    <div class="card wave-up" id="about">
+        <h2><i class="fa-solid fa-user"></i> About Me</h2>
+        <p>
+            I am an MCA student with a strong interest in IT technologies and a passion
+            for building a career in the technology field. I am eager to continuously
+            learn, enhance my technical skills, and apply my knowledge to real-world
+            challenges. I aspire to contribute to innovative IT solutions while growing
+            as a dedicated and motivated technology professional.
+        </p>
+    </div>
+
+    <!-- ================= EDUCATION ================= -->
+    <div class="card wave-up" id="education">
+        <h2><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+        <ul>
+            <li>
+                <strong>MCA</strong> – Rajagiri College of Social Sciences<br>
+                <em>2025 – 2027</em>
+            </li><br>
+            <li>
+                <strong>BCA</strong> – St. Mary’s College (Autonomous), Thrissur<br>
+                <em>2022 – 2025</em>
+            </li><br>
+            <li>
+                <strong>CBSE XII</strong> – Ryan International School, Udaipur<br>
+                <em>2021 – 2022</em>
+            </li><br>
+            <li>
+                <strong>CBSE X</strong> – Ryan International School, Udaipur<br>
+                <em>2019 – 2020</em>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ================= SKILLS ================= -->
+    <div class="card wave-up" id="skills">
+        <h2><i class="fa-solid fa-laptop-code"></i> Skills</h2>
+
+        <div class="grid">
+            <div>
+                <h3><i class="fa-solid fa-code"></i> Technical Skills</h3>
+                <ul>
+                    <li><i class="fa-brands fa-html5"></i> HTML</li>
+                    <li><i class="fa-brands fa-python"></i> Python</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                    <li><i class="fa-solid fa-database"></i> MySQL</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+                <ul>
+                    <li>Communication</li>
+                    <li>Adaptability</li>
+                    <li>Time Management</li>
+                    <li>Teamwork</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= PROJECTS ================= -->
+    <div class="card wave-up" id="projects">
+        <h2><i class="fa-solid fa-diagram-project"></i> Projects</h2>
+        <ul>
+            <li>
+                <strong>Haritha Karma Sena</strong> <em>(July – January 2024)</em><br>
+                Web application to improve waste management practices and user awareness.
+            </li><br>
+            <li>
+                <strong>Escapism (Mini Project)</strong> <em>(April – May 2024)</em><br>
+                Virtual bookshelf application to manage personal book collections.
+            </li><br>
+            <li>
+                <strong>NGO Management System (DBMS Project)</strong> <em>(September 2025)</em><br>
+                Database-driven system to manage NGO operations including donors,
+                volunteers, beneficiaries, events, and funds using structured
+                relational tables.
+            </li><br>
+            <li>
+                <strong>Online Shopping Website (Flask Project)</strong> <em>(November 2025)</em><br>
+                Full-stack e-commerce web application developed using Flask with user
+                authentication, product listing, and order management features.
+            </li>
+        </ul>
+    </div>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <div class="card wave-up" id="certifications">
+        <h2><i class="fa-solid fa-certificate"></i> Certifications & Activities</h2>
+        <ul>
+            <li>ASAP Coding Skills Programme (2022 – 2025)</li>
+            <li>Mahindra Pride Classroom – Employability Skills</li>
+            <li>KKEM Personality Development Course</li>
+            <li>International Seminar on Fog Computing</li>
+        </ul>
+    </div>
+
+    <!-- ================= LANGUAGES ================= -->
+    <div class="card wave-up" id="languages">
+        <h2><i class="fa-solid fa-language"></i> Languages Known</h2>
+        <ul>
+            <li>English</li>
+            <li>Hindi</li>
+            <li>Malayalam</li>
+        </ul>
+    </div>
+
+    <!-- ================= CONTACT ================= -->
+    <div class="card wave-up" id="contact">
+        <h2><i class="fa-solid fa-address-card"></i> Contact Information</h2>
+        <p><i class="fa-solid fa-envelope"></i> poojanair082004@gmail.com</p>
+        <p><i class="fa-solid fa-phone"></i> +91 6367 253 887</p>
+        <p><i class="fa-brands fa-linkedin"></i> pooja-nair-23997a339</p>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='animations.js') }}"></script>
+</body>
+</html>

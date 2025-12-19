@@ -1,0 +1,159 @@
+:root {
+    --bg-color: #FAFAF7;
+    --primary-color: #334155;
+    --accent-color: #6B9080;
+    --secondary-color: #F9A66C;
+}
+
+/* ---------- Global ---------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    line-height: 1.75;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px;
+}
+
+/* ---------- HERO ---------- */
+.header {
+    position: relative;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: #fff;
+    height: 75vh;
+    min-height: 500px;
+    border-radius: 22px;
+    margin-bottom: 70px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* ---------- HERO NAVBAR ---------- */
+.hero-nav {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+.hero-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.hero-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.3s ease;
+}
+
+.hero-nav a:hover::after {
+    width: 100%;
+}
+
+/* ---------- PROFILE ---------- */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.header-text p {
+    margin-top: 10px;
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* ---------- CARDS ---------- */
+.card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-left: 6px solid var(--accent-color);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 26px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+.card ul {
+    padding-left: 24px;
+}
+
+.card ul li {
+    margin-bottom: 12px;
+}
+
+/* ---------- GRID ---------- */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+}
+
+/* ---------- ICONS ---------- */
+h2 i,
+h3 i,
+.card ul li i {
+    margin-right: 10px;
+    color: var(--accent-color);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+        padding: 50px 20px;
+    }
+
+    .hero-nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .header-text h1 {
+        font-size: 36px;
+    }
+}
